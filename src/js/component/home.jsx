@@ -1,19 +1,22 @@
 import React from "react";
 
+import Watch from "./watch.jsx";
+
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = () => {
+
+const Home = ({segundo1, segundo2, minuto1, minuto2, hora}) => {
 	return (
-		<div>
-			<div>reloj</div>
-			<div>0</div>
-			<div>0</div>
-			<div>0</div>
-			<div>0</div>
-			<div>0</div>
-		</div>
+		<>
+			<Watch 
+				segundo1={segundo1} 
+				segundo2={segundo2} 
+				minuto1={minuto1} 
+				minuto2={minuto2} 
+				hora={hora}
+			/>
+		</>
 	);
 };
 
